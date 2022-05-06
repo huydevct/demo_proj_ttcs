@@ -1,0 +1,67 @@
+table{
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    width: 1200px;
+    height: 100px;
+}
+.header{
+    margin: 10px 35px;
+    height: 30px;
+}
+.name{
+    margin: 0;
+    float: left;
+}
+.textsach{
+    margin-left: 575px;
+    float: left;
+    height: 30px;
+    width: 18em;
+}
+.textsv2{
+    margin-left: 550px;
+    float: left;
+    height: 30px;
+    width: 18em;
+}
+.textsv{
+    margin-left: 490px;
+    float: left;
+    height: 30px;
+    width: 18em;
+}
+.btn{
+    float: left;
+    height: 30px;
+    background-color: royalblue;
+    cursor: pointer;
+    border: none;
+}
+td{
+    border: none;
+    background-color: #f0e7da;
+}
+th{
+    background-color:#cad8fa;
+}
+#xoa, #datra, #xem{
+    padding: 13px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: lightsalmon;
+}
+#sua{
+    background-color: aquamarine;
+    margin: 17px;
+    padding: 10px;
+    width: 100%;
+}
+@media screen and (max-width: 1200px) {
+    table, .success {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
