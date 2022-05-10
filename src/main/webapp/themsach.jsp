@@ -20,19 +20,19 @@
             <label>Tên sách</label><br>
             <input class="input" type="text" name="tensach" placeholder="Nhập tên sách" required><br>
             <lablel>Thể loại</lablel><br>
-            <select name="loaisach" id="loaisach" size="5">
+            <select name="loaisach" id="loaisach">
                 <c:forEach items="${list_ls}" var="loaisach">
                     <option value="${loaisach.getId_ls()}">${loaisach.getTen_ls()}</option>
                 </c:forEach>
             </select>
             <label>Vị trí</label><br>
-            <select name="vitri" id="vitri" size="5">
+            <select name="vitri" id="vitri">
                 <c:forEach items="${list_vt}" var="vitri">
                     <option value="${vitri.getId_vt()}">${vitri.getTen_vt()}</option>
                 </c:forEach>
             </select>
             <label>Tác giả</label><br>
-            <select name="tacgia" id="tacgia" size="5">
+            <select name="tacgia" id="tacgia">
                 <c:forEach items="${list_tg}" var="tacgia">
                     <option value="${tacgia.getId_tg()}">
                             ${tacgia.getTen_tg()}

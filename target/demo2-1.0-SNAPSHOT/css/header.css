@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+}
+
 .head {
     text-align: center;
-    background-color: cyan;
+    background-color: #2196F3;
     display: flex;
     width: 100%;
     font-size: 16px;
@@ -28,7 +32,7 @@ a:hover,.dropdown .nut_dropdown:hover{
     padding: 15px 30px;
     width: 100%;
     width: 210px;
-    background-color: cyan;
+    background-color: #2196F3;
 }
 /*ẩn nội dung dropdown*/
 .noidung_dropdown{

@@ -1,8 +1,10 @@
 package DAO;
 
 
+import Model.Tac_gia;
 import Model.Vi_tri;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -24,5 +26,17 @@ public class DBVi_tri {
             System.out.println(e);
         }
         return null;
+    }
+
+    public int getThemvitri(Vi_tri vi_tri){
+        int result=0;
+        try {
+            PreparedStatement pre=db.getCon().prepareStatement("INSERT INTO vi_tri(ten_vt) VALUE (?)");
+            pre.setString(1, vi_tri.getTen_vt());
+            result=pre.executeUpdate();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return result;
     }
 }

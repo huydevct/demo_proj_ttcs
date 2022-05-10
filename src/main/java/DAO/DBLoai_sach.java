@@ -1,7 +1,9 @@
 package DAO;
 
 import Model.Loai_sach;
+import Model.Tac_gia;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -23,6 +25,17 @@ public class DBLoai_sach {
             System.out.println(e);
         }
         return null;
+    }
+    public int getThemloaisach(Loai_sach loai_sach){
+        int result=0;
+        try {
+            PreparedStatement pre=db.getCon().prepareStatement("INSERT INTO loai_sach(ten_loai_sach) VALUE (?)");
+            pre.setString(1, loai_sach.getTen_ls());
+            result=pre.executeUpdate();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return result;
     }
     public static void main(String[] args) {
     }

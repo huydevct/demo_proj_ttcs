@@ -43,7 +43,7 @@
                             <a id="sua" href="${pageContext.request.contextPath}/xemchitiet?id=${muon.getSinh_vien().getMa_sv()}">Xem chi tiết</a>
                         </td>
                         <td>
-                            <form action="qlmuon" method="post">
+                            <form action="qlmuon" method="post" id="datra-method">
                                 <button id="datra" class="button" type="submit" name="xacnhan" value="${muon.getId()}">Đã trả</button>
                             </form>
                         </td>

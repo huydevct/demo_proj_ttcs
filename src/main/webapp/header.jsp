@@ -21,10 +21,9 @@
     <div class="dropdown">
         <button class="nut_dropdown">Thêm thông tin sách</button>
         <div class="noidung_dropdown">
-            <a href="${pageContext.request.contextPath}/themsach">Thêm sách</a>
-            <a href="#">Thêm thể loại</a>
-            <a href="#">Thêm tác giả</a>
-            <a href="#">Thêm vị trí</a>
+            <a href="${pageContext.request.contextPath}/themloaisach">Thêm thể loại</a>
+            <a href="${pageContext.request.contextPath}/themtacgia">Thêm tác giả</a>
+            <a href="${pageContext.request.contextPath}/themvitri">Thêm vị trí</a>
         </div>
     </div>
     <div class="dropdown">
@@ -42,7 +41,6 @@
         <button class="nut_dropdown">Tài khoản</button>
         <div>
             <div class="noidung_dropdown">
-                <a href="#">Đổi mật khẩu</a>
                 <a href="login.jsp">Đăng xuất</a>
             </div>
         </div>

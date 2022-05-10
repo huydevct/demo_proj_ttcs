@@ -22,6 +22,7 @@
             <input type="text" name="text_tks" class="textsach" placeholder="Nhập tên sách cần tìm">
             <button type="submit" name="timkiemsach" class="btn">Tìm kiếm</button>
         </form>
+
     </div>
     <div>
         <table>
@@ -52,7 +53,7 @@
                         <a id="sua" href="${pageContext.request.contextPath}/chinhsua?id=${book.getId()}">Chỉnh sửa</a>
                     </td>
                     <td>
-                        <form action="xoa" method="post">
+                        <form action="xoa" method="post" id="xoa-method">
                             <button id="xoa" class="button" type="submit" name="xoa" value="${book.getId()}" >Xoa</button>
                         </form>
                     </td>
@@ -61,6 +62,10 @@
             </tbody>
         </table>
     </div>
+    <br>
+    <br>
+    <a href="${pageContext.request.contextPath}/themsach">Thêm sách</a>
+
 </div>
 </body>
 

@@ -27,7 +27,7 @@
         <input class="login" type="text" name="username" size="35px" placeholder="Nhập email hoặc số điện thoại"><br>
         <label><b>Mật khẩu</b></label><br>
         <input class="login" type="password" name="password" size="35px" placeholder="Nhập mật khẩu"><br>
-        <input type="submit" value="Đăng nhập">
+        <input type="submit" value="Đăng nhập" id="btn">
     </form>
 </div>
 </body>
