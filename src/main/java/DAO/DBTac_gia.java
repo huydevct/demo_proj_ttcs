@@ -1,10 +1,7 @@
 package DAO;
 
-import Model.Sach;
 import Model.Tac_gia;
-import Model.Vi_tri;
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -26,17 +23,5 @@ public class DBTac_gia {
             System.out.println(e);
         }
         return null;
-    }
-    public int getThemtacgia(Tac_gia tacgia){
-        int result=0;
-        try {
-            PreparedStatement pre=db.getCon().prepareStatement("INSERT INTO ttcs.tac_gia(ten_tac_gia, dia_chi) VALUE (?, ?)");
-            pre.setString(1, tacgia.getTen_tg());
-            pre.setString(2, tacgia.getDia_chi());
-            result=pre.executeUpdate();
-        }catch (Exception e){
-            System.out.println(e);
-        }
-        return result;
     }
 }

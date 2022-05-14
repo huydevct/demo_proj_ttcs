@@ -55,38 +55,17 @@ th{
     background-color: lightsalmon;
 }
 #sua{
-    background-color: #2196F3;
+    background-color: aquamarine;
     margin: 17px;
     padding: 10px;
     width: 100%;
+}
+.addsach{
+    border: 1px solid black;
+    padding: 3px;
 }
 @media screen and (max-width: 1200px) {
     table, .success {
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
-}
-
-#xoa-method {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#sua {
-    border-radius: 3px;
-}
-#xoa {
-    border-radius: 3px;
-    margin: 13px;
-}
-
-#datra-method {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#datra {
-    border-radius: 3px;
-    margin: 13px;
 }
