@@ -43,6 +43,21 @@ public class DBQl_muon {
         }
         return null;
     }
+    public String Ngay_tra(String ma_sv){
+        String ngay_tra=null;
+        try {
+            Statement st=db.getCon().createStatement();
+            ResultSet resultSet=st.executeQuery("SELECT ngay_tra from muon where ma_sv='"+ma_sv+"' and trang_thai=0");
+            while (resultSet.next()){
+                SimpleDateFormat Format=new SimpleDateFormat("dd/MM/yyyy");
+                Date date=resultSet.getDate(1);
+                ngay_tra=Format.format(date);
+            }
+        }catch (Exception e){
+            System.out.println(e);
+        }
+        return ngay_tra;
+    }
     public void getXacnhan(int id){
         try {
             Date date=new Date();
@@ -131,8 +146,9 @@ public class DBQl_muon {
         }
         return id;
     }
+
     public static void main(String[] args) {
         DBQl_muon dbQl_muon=new DBQl_muon();
-        System.out.println(dbQl_muon.getLuotmuon("B19DCCN001"));
+        System.out.println(dbQl_muon.Ngay_tra("B19DCCN003"));
     }
 }

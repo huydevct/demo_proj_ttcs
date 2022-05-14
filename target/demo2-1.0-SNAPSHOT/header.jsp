@@ -19,11 +19,11 @@
     <a href="home.jsp">Home</a>
     <a href="${pageContext.request.contextPath}/qlsach">Quản lý sách</a>
     <div class="dropdown">
-        <button class="nut_dropdown">Thêm thông tin sách</button>
+        <button class="nut_dropdown">Thông tin sách</button>
         <div class="noidung_dropdown">
-            <a href="${pageContext.request.contextPath}/themloaisach">Thêm thể loại</a>
-            <a href="${pageContext.request.contextPath}/themtacgia">Thêm tác giả</a>
-            <a href="${pageContext.request.contextPath}/themvitri">Thêm vị trí</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Tác giả</a>
+            <a href="#">Vị trí</a>
         </div>
     </div>
     <div class="dropdown">
@@ -41,6 +41,7 @@
         <button class="nut_dropdown">Tài khoản</button>
         <div>
             <div class="noidung_dropdown">
+                <a href="#">Đổi mật khẩu</a>
                 <a href="login.jsp">Đăng xuất</a>
             </div>
         </div>

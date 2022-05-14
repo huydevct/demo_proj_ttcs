@@ -18,7 +18,7 @@ public class DB {
     public DB(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ttcs", "root", "Huy@0913543156");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/ttcs", "root", "a123456");
         } catch (SQLException e) {
             System.out.println("loi SQL");
         }catch(ClassNotFoundException e){
