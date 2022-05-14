@@ -16,17 +16,14 @@ import java.util.List;
 @WebServlet(name = "XemchitietServlet", urlPatterns = {"/xemchitiet"})
 public class XemchitietServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if(request.getParameter("xem")!=null){
-            request.getSession().setAttribute("xem", request.getParameter("xem"));
-            DBQlSinh_vien sinh_vien=new DBQlSinh_vien();
-            DBQl_muon dbQl_muon=new DBQl_muon();
-            List<Muon_sach> list=dbQl_muon.getDsmuon("1");
-            request.setAttribute("muonList", list);
-            request.getRequestDispatcher("ds_muon.jsp").forward(request, response);
-        }
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        String msv=request.getParameter("id");
+        DBQlSinh_vien dbQlSinh_vien= new DBQlSinh_vien();
+        Sinh_vien sinh_vien=dbQlSinh_vien.getTen_sv(msv);
+        request.setAttribute("sinhvien", sinh_vien);
+        request.getRequestDispatcher("chitiet_sv.jsp").forward(request, response);
     }
 }
